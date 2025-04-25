@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+ 
+body {
+    background-color: #0097A7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box {
+    background-color: #1F2227;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E2F36;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.google-btn i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+.divider {
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.divider span {
+    background: #1F2227;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #2E2F36;
+    color: white;
+}
+
+
+.email-btn {
+    display: block;
+    background-color: #00ACC1;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.terms {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 15px;
+}
+
+.terms a {
+    color: #00ACC1;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="signup-container">
+        <div class="signup-box">
+            <img src="vr-6.png" alt="Profile Image" class="profile-image">
+            <h2>Sign Up Now</h2>
+            <p>Join the Language Revolution!</p>
+
+            <a href="https://accounts.google.com/signin" class="google-btn">
+                <i class="fab fa-google"></i> Continue with Google
+            </a>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <label for="name">Enter Your Name</label>
+            <input type="text" id="name" placeholder="Your Full Name">
+
+            <a href="signup-email.html" class="email-btn">Continue with Email</a>
+
+            <p class="terms">By continuing you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

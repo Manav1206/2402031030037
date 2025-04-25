@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        body {
+            background-color: #f8f8f8;
+    
+        }
+
+        .navbar {
+            background-color: #0c1c2b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar button {
+            background-color: #008080;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 5%;
+        }
+
+        .text-section {
+            width: 50%;
+        }
+
+        .text-section h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0c1c2b;
+        }
+
+        .text-section p {
+            margin: 15px 0;
+            color: #666;
+            font-size: 18px;
+        }
+
+
+        .text-section a{
+            background-color: #008080;
+            border: solid;
+            padding: 15px 25px;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .image-section img {
+            width: 600px;
+            height: 650px;
+            border-radius: 10px;
+        }
+
+        .mission-section {
+            background-color: #0c1c2b;
+            color: white;
+            text-align: center;
+            padding: 50px 5%;
+            margin-top: 20px;
+        }
+
+        .mission-section .content {
+            border: 1px dashed #008080;
+            padding: 130px;
+            display: inline-block;
+        }
+
+        .mission-section h2 {
+            color: #008080;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .mission-section p {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .features {
+            background-color: #0c1c2b;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .features h1 {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .features p {
+            color: #bbb;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1b2838;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 32%;
+            text-align: left;
+            border: 1px solid;
+        }
+
+        .card img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        .card a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container-of {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #232730;
+            padding: 50px;
+            width: 100%;
+
+
+        }
+
+
+        .content-of {
+            flex: 1;
+            color: white;
+        }
+
+        .content-of h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content-of p {
+            font-size: 18px;
+            color: #d1d1d1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 34px;
+            background: transparent;
+            border: 2px solid #d1d1d1;
+            color: #d1d1d1;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background: #d1d1d1;
+            color: black;
+        }
+
+ 
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .body-of-below {
+            background-color: #2C2F36;
+            color: #d1d1d1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 41vh;
+            margin: 0;
+        }
+
+        .container-of-below {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+
+        }
+
+        .feature-of-below {
+            text-align: center;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .feature-of-below img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .feature-of-below h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .feature-of-below p {
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .body-of-contact {
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #1F2227;
+        }
+
+       
+        .contact-container {
+            display: flex;
+            width: 80%;
+
+            background-color: #1F2227;
+
+            overflow: hidden;
+
+        }
+
+    
+        .contact-image {
+            width: 50%;
+        }
+
+        .contact-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+       
+        .contact-form {
+            width: 60%;
+            padding: 90px;
+            color: white;
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .contact-form p {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #2E2F36;
+            color: white;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+  
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00ACC1;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #008C9E;
+        }
+
+        .body-of-footer {
+            background-color: #181a1b;
+            color: white;
+        }
+
+        .footer {
+            background-color: #181a1b;
+            padding: 50px 80px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #b0b0b0;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: white;
+        }
+
+        .subscribe-box {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .subscribe-box input {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        .subscribe-box button {
+            padding: 10px 20px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .subscribe-box button:hover {
+            background-color: #006666;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #b0b0b0;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #333;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .footer-bottom a {
+            color: #b0b0b0;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">VirtualLangExchange</a></div>
+            <div class="nav-links">
+                <a href="#experience">Experience Language Learning</a>
+                <a href="#discover">Discover immersive language practice</a>
+                <a href="#discover">Explore Our Offerings</a>
+            </div>
+            <button><a href="form.html">Connect With Us</a></button>
+        </div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="vr.png" alt="Person using VR headset">
+        </div>
+        <div class="text-section">
+            <h1>Unlock Your Language Potential</h1>
+            <p>Engage in real conversations with native speakers in a virtual setting.</p>
+            <br>
+           <a href="form.html">Join the Revolution</a>
+        </div>
+    </div>
+    <div id="mission" class="mission-section">
+        <div class="content">
+            <h2>Empowering Global Communication</h2>
+            <p>Our mission is to bridge language barriers through innovative virtual experiences, enabling learners to
+                connect and converse with native speakers worldwide.</p>
+        </div>
+    </div>
+    <div id="experience" class="features">
+        <h1>Experience Language Like Never Before</h1>
+        <br>
+        <p>Your Gateway to Global Conversations</p>
+        <div class="cards">
+            <div class="card">
+                <img src="vr-2.png" alt="VR Learning">
+                <div class="card-content">
+                    <p> learn, Connect, Grow</p>
+                    <h3>Transform Your Language Skills</h3>
+                    <p>Dive into immersive learning with real-time interactions.</p>
+                    <a href="form.html"> start your journey</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="vr-3.png" alt="Cooking with VR">
+                <div class="card-content">
+                    <p> Speak with Confidence</p>
+                    <h3>Connect with Native Speakers</h3>
+                    <p>Practice speaking in a supportive virtual environment.</p>
+                    <a href="form.html"> Get Started Today</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="vr-4.png" alt="Interactive VR">
+                <div class="card-content">
+                    <p> Expand Your Horizons</p>
+                    <h3>Interactive Language Learning</h3>
+                    <p>Engage in meaningful conversations that enhance your fluency.</p>
+                    <a href="form.html">Join Our Community</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="discover" class="container-of">
+        <div class="content-of">
+            <h2>How It Works</h2>
+            <p>Simple steps to start your language exchange journey.</p>
+            <br>
+            <a href="form.html" class="cta-button">Get Started Now</a>
+        </div>
+        <div class="image-container">
+            <img src="vr-5.png" alt="VR Experience">
+        </div>
+
+    </div>
+    <div class="body-of-below">
+        <div class="container-of-below">
+            <div class="feature-of-below">
+                <img src="vr-i-1.png" alt="Virtual Immersion Icon">
+                <h3>Virtual Immersion</h3>
+                <p>Experience real-life scenarios to practice your language skills.</p>
+            </div>
+            <div class="feature-of-below">
+                <img src="vr-i-2.png" alt="Cultural Exchange Icon">
+                <h3>Cultural Exchange</h3>
+                <p>Learn about different cultures while improving your language proficiency.</p>
+            </div>
+            <div class="feature-of-below">
+                <img src="vr-i-3.png" alt="Personalized Learning Icon">
+                <h3>Personalized Learning</h3>
+                <p>Tailored sessions to meet your unique language goals.</p>
+            </div>
+            <div class="feature-of-below">
+                <img src="vr-i-4.png" alt="Community Support Icon">
+                <h3>Community Support</h3>
+                <p>Join a vibrant community of learners and native speakers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="body-of-contact">
+        <div class="contact-container">
+            <!-- Left Section with Image -->
+            <div class="contact-image">
+                <img src="vr-7.png" alt="VR Contact">
+            </div>
+
+            <!-- Right Section with Form -->
+            <div class="contact-form">
+                <h2>Reach Out to Us</h2>
+                <p>We're Here to Help</p>
+
+                <form action="#" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Write your message here" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="body-of-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>VirtualLangExchange</h3>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#mission">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Stay Connected</h3>
+                    <ul>
+                        <li><a href="#">Follow Us</a></li>
+                        <li><a href="#">Join Our Community</a></li>
+                        <li><a href="#">Get Updates</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Subscribe Now</h3>
+                    <p>Stay updated with our latest features and offerings.</p>
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                    <br>
+                    <p style="font-size: 12px; color: #b0b0b0;">By subscribing, you agree to our Privacy Policy and
+                        consent to receive updates.</p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="vr-5.png"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 VirtualLangExchange. All rights reserved.</p>
+                <br>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
